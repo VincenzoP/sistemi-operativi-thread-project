@@ -1,12 +1,12 @@
 struct TQueueNode;
-typedef struct TQueueNode *TQueue;
+typedef struct TQueueNode* TQueue;
 
 /* Adds a new element at the end of the list, returns its position */
 unsigned long int tqueue_enqueue(TQueue *q, void *data);
 
 /* Removes and returns the element at the beginning of the list, NULL if the
  * queue is empty */
-oid *tqueue_pop(TQueue *q);
+void *tqueue_pop(TQueue *q);
 
 /* Returns the number of elements in the list */
 unsigned long int tqueue_size(TQueue q);
